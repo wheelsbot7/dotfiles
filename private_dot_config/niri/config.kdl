@@ -704,7 +704,3 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
-include "./noctalia.kdl"
-
-// include "dms/cursor.kdl"
-// include "dms/binds.kdl"
