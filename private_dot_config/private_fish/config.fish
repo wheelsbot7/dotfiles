@@ -3,9 +3,9 @@ if status is-interactive
 end
 set -g fish_greeting
 
-alias ls='eza -a --icons'
-alias ll='eza -al --icons'
-alias lt='eza -a --tree --level=1 --icons'
+alias ls='eza -a --icons always'
+alias ll='eza -al --icons always'
+alias lt='eza -a --tree --level=1 --icons always'
 alias cd='z'
 alias cat='bat'
 alias hx='helix'

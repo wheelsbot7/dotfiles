@@ -275,10 +275,10 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "steam"
-spawn-at-startup "org.ferdium.Ferdium"
+spawn-at-startup "ferdium"
 spawn-at-startup "thunderbird"
+spawn-at-startup "waterfox"
 // spawn-at-startup "wayland-pipewire-idle-inhibit"
 // spawn-at-startup "swayidle" "-w" "timeout" "2001" "niri msg action power-off-monitors" "timeout" "6000" "swaylock -f" "before-sleep" "swaylock -f"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
@@ -441,7 +441,7 @@ binds {
     Mod+Shift+Return { spawn "kitten" "quick_access_terminal"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+Shift+D { spawn "fuzzel"; }
-    Mod+E hotkey-overlay-title="Open the File Explorer: thunar" { spawn "bash" "-c" "XDG_MENU_PREFIX=arch- kbuildsycoca6 && dolphin"; }
+    Mod+E hotkey-overlay-title="Open the File Explorer: thunar" { spawn "thunar"; }
     Mod+B hotkey-overlay-title="Open the Browser: Zen" { spawn "zen-browser"; }
     Mod+Shift+E hotkey-overlay-title="Emoji selector: Rofimoji" { spawn "rofimoji"; }
     // Mod+Shift+S hotkey-overlay-title="Screenshot with Satty"{spawn "bash" "-c" "grim -g \"$(slurp -o -r -c '#ff0000ff')\" -t ppm - | satty --filename - --fullscreen --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png";}
