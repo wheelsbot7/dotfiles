@@ -27,3 +27,5 @@ end
 
 # Created by `pipx` on 2026-05-28 16:46:00
 set PATH $PATH /home/wheels/.local/bin
+
+set EDITOR $EDITOR helix
