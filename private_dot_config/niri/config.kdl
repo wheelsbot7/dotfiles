@@ -445,7 +445,8 @@ binds {
     Mod+B hotkey-overlay-title="Open the Browser: Zen" { spawn "zen-browser"; }
     Mod+Shift+E hotkey-overlay-title="Emoji selector: Rofimoji" { spawn "rofimoji"; }
     // Mod+Shift+S hotkey-overlay-title="Screenshot with Satty"{spawn "bash" "-c" "grim -g \"$(slurp -o -r -c '#ff0000ff')\" -t ppm - | satty --filename - --fullscreen --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png";}
-    Mod+Shift+S hotkey-overlay-title="Screenshot" { screenshot; }
+    // Mod+Shift+S hotkey-overlay-title="Screenshot" { screenshot; }
+    Mod+Shift+S hotkey-overlay-title="Screenshot" { spawn-sh "noctalia msg screenshot-region"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     // Mod+V { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
     Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
